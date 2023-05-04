@@ -1,0 +1,688 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB90B61C2A02C58E0088B81F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB90B61B2A02C58E0088B81F /* GoogleService-Info.plist */; };
+		FB90B61E2A0342810088B81F /* CarouselCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90B61D2A0342810088B81F /* CarouselCard.swift */; };
+		FBAC9EF329FB09D300E9858B /* PhotoGalleryStoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAC9EF229FB09D300E9858B /* PhotoGalleryStoreApp.swift */; };
+		FBAC9EF729FB09D500E9858B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBAC9EF629FB09D500E9858B /* Assets.xcassets */; };
+		FBAC9EFA29FB09D500E9858B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBAC9EF929FB09D500E9858B /* Preview Assets.xcassets */; };
+		FBAC9F0429FB09D500E9858B /* PhotoGalleryStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAC9F0329FB09D500E9858B /* PhotoGalleryStoreTests.swift */; };
+		FBAC9F0E29FB09D500E9858B /* PhotoGalleryStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAC9F0D29FB09D500E9858B /* PhotoGalleryStoreUITests.swift */; };
+		FBAC9F1029FB09D500E9858B /* PhotoGalleryStoreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAC9F0F29FB09D500E9858B /* PhotoGalleryStoreUITestsLaunchTests.swift */; };
+		FBAC9F1D29FB0AA000E9858B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAC9F1C29FB0AA000E9858B /* ContentView.swift */; };
+		FBAC9F1F29FB0AD100E9858B /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAC9F1E29FB0AD100E9858B /* CartManager.swift */; };
+		FBAC9F2129FB0AF900E9858B /* PaymentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAC9F2029FB0AF900E9858B /* PaymentHandler.swift */; };
+		FBAC9F2629FB0BB300E9858B /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAC9F2529FB0BB300E9858B /* GalleryView.swift */; };
+		FBAC9F2829FB0BCD00E9858B /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAC9F2729FB0BCD00E9858B /* CartView.swift */; };
+		FBAC9F2E29FB0C3200E9858B /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAC9F2D29FB0C3200E9858B /* Product.swift */; };
+		FBAC9F3029FB0C5200E9858B /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAC9F2F29FB0C5200E9858B /* ProductCard.swift */; };
+		FBAC9F3229FB0C6E00E9858B /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAC9F3129FB0C6E00E9858B /* CartButton.swift */; };
+		FBAC9F3429FB0C8800E9858B /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAC9F3329FB0C8800E9858B /* ProductRow.swift */; };
+		FBAC9F3729FB0CAB00E9858B /* PaymentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAC9F3629FB0CAB00E9858B /* PaymentButton.swift */; };
+		FBAC9F3A29FB10A400E9858B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FBAC9F3929FB10A400E9858B /* FirebaseAuth */; };
+		FBAC9F3C29FB10A400E9858B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FBAC9F3B29FB10A400E9858B /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBAC9F0029FB09D500E9858B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBAC9EE729FB09D300E9858B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBAC9EEE29FB09D300E9858B;
+			remoteInfo = PhotoGalleryStore;
+		};
+		FBAC9F0A29FB09D500E9858B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBAC9EE729FB09D300E9858B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBAC9EEE29FB09D300E9858B;
+			remoteInfo = PhotoGalleryStore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FB90B61B2A02C58E0088B81F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FB90B61D2A0342810088B81F /* CarouselCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCard.swift; sourceTree = "<group>"; };
+		FBAC9EEF29FB09D300E9858B /* PhotoGalleryStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoGalleryStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBAC9EF229FB09D300E9858B /* PhotoGalleryStoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryStoreApp.swift; sourceTree = "<group>"; };
+		FBAC9EF629FB09D500E9858B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBAC9EF929FB09D500E9858B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FBAC9EFF29FB09D500E9858B /* PhotoGalleryStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoGalleryStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBAC9F0329FB09D500E9858B /* PhotoGalleryStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryStoreTests.swift; sourceTree = "<group>"; };
+		FBAC9F0929FB09D500E9858B /* PhotoGalleryStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoGalleryStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBAC9F0D29FB09D500E9858B /* PhotoGalleryStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryStoreUITests.swift; sourceTree = "<group>"; };
+		FBAC9F0F29FB09D500E9858B /* PhotoGalleryStoreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryStoreUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FBAC9F1C29FB0AA000E9858B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FBAC9F1E29FB0AD100E9858B /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
+		FBAC9F2029FB0AF900E9858B /* PaymentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHandler.swift; sourceTree = "<group>"; };
+		FBAC9F2529FB0BB300E9858B /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		FBAC9F2729FB0BCD00E9858B /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		FBAC9F2D29FB0C3200E9858B /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		FBAC9F2F29FB0C5200E9858B /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
+		FBAC9F3129FB0C6E00E9858B /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
+		FBAC9F3329FB0C8800E9858B /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
+		FBAC9F3629FB0CAB00E9858B /* PaymentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBAC9EEC29FB09D300E9858B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBAC9F3A29FB10A400E9858B /* FirebaseAuth in Frameworks */,
+				FBAC9F3C29FB10A400E9858B /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBAC9EFC29FB09D500E9858B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBAC9F0629FB09D500E9858B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBAC9EE629FB09D300E9858B = {
+			isa = PBXGroup;
+			children = (
+				FBAC9EF129FB09D300E9858B /* PhotoGalleryStore */,
+				FBAC9F0229FB09D500E9858B /* PhotoGalleryStoreTests */,
+				FBAC9F0C29FB09D500E9858B /* PhotoGalleryStoreUITests */,
+				FBAC9EF029FB09D300E9858B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBAC9EF029FB09D300E9858B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBAC9EEF29FB09D300E9858B /* PhotoGalleryStore.app */,
+				FBAC9EFF29FB09D500E9858B /* PhotoGalleryStoreTests.xctest */,
+				FBAC9F0929FB09D500E9858B /* PhotoGalleryStoreUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBAC9EF129FB09D300E9858B /* PhotoGalleryStore */ = {
+			isa = PBXGroup;
+			children = (
+				FBAC9EF229FB09D300E9858B /* PhotoGalleryStoreApp.swift */,
+				FBAC9F1E29FB0AD100E9858B /* CartManager.swift */,
+				FBAC9F2029FB0AF900E9858B /* PaymentHandler.swift */,
+				FBAC9F2229FB0B2500E9858B /* Views */,
+				FBAC9F2329FB0B3E00E9858B /* Components */,
+				FBAC9F2429FB0B4B00E9858B /* Models */,
+				FBAC9EF629FB09D500E9858B /* Assets.xcassets */,
+				FB90B61B2A02C58E0088B81F /* GoogleService-Info.plist */,
+				FBAC9EF829FB09D500E9858B /* Preview Content */,
+			);
+			path = PhotoGalleryStore;
+			sourceTree = "<group>";
+		};
+		FBAC9EF829FB09D500E9858B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FBAC9EF929FB09D500E9858B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FBAC9F0229FB09D500E9858B /* PhotoGalleryStoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBAC9F0329FB09D500E9858B /* PhotoGalleryStoreTests.swift */,
+			);
+			path = PhotoGalleryStoreTests;
+			sourceTree = "<group>";
+		};
+		FBAC9F0C29FB09D500E9858B /* PhotoGalleryStoreUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FBAC9F0D29FB09D500E9858B /* PhotoGalleryStoreUITests.swift */,
+				FBAC9F0F29FB09D500E9858B /* PhotoGalleryStoreUITestsLaunchTests.swift */,
+			);
+			path = PhotoGalleryStoreUITests;
+			sourceTree = "<group>";
+		};
+		FBAC9F2229FB0B2500E9858B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FBAC9F1C29FB0AA000E9858B /* ContentView.swift */,
+				FBAC9F2529FB0BB300E9858B /* GalleryView.swift */,
+				FBAC9F2729FB0BCD00E9858B /* CartView.swift */,
+			);
+			name = Views;
+			path = ../Views;
+			sourceTree = "<group>";
+		};
+		FBAC9F2329FB0B3E00E9858B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FBAC9F2F29FB0C5200E9858B /* ProductCard.swift */,
+				FBAC9F3129FB0C6E00E9858B /* CartButton.swift */,
+				FBAC9F3329FB0C8800E9858B /* ProductRow.swift */,
+				FBAC9F3629FB0CAB00E9858B /* PaymentButton.swift */,
+				FB90B61D2A0342810088B81F /* CarouselCard.swift */,
+			);
+			name = Components;
+			path = ../Views/Components;
+			sourceTree = "<group>";
+		};
+		FBAC9F2429FB0B4B00E9858B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FBAC9F2D29FB0C3200E9858B /* Product.swift */,
+			);
+			name = Models;
+			path = ../Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBAC9EEE29FB09D300E9858B /* PhotoGalleryStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBAC9F1329FB09D500E9858B /* Build configuration list for PBXNativeTarget "PhotoGalleryStore" */;
+			buildPhases = (
+				FBAC9EEB29FB09D300E9858B /* Sources */,
+				FBAC9EEC29FB09D300E9858B /* Frameworks */,
+				FBAC9EED29FB09D300E9858B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoGalleryStore;
+			packageProductDependencies = (
+				FBAC9F3929FB10A400E9858B /* FirebaseAuth */,
+				FBAC9F3B29FB10A400E9858B /* FirebaseFirestore */,
+			);
+			productName = PhotoGalleryStore;
+			productReference = FBAC9EEF29FB09D300E9858B /* PhotoGalleryStore.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBAC9EFE29FB09D500E9858B /* PhotoGalleryStoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBAC9F1629FB09D500E9858B /* Build configuration list for PBXNativeTarget "PhotoGalleryStoreTests" */;
+			buildPhases = (
+				FBAC9EFB29FB09D500E9858B /* Sources */,
+				FBAC9EFC29FB09D500E9858B /* Frameworks */,
+				FBAC9EFD29FB09D500E9858B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBAC9F0129FB09D500E9858B /* PBXTargetDependency */,
+			);
+			name = PhotoGalleryStoreTests;
+			productName = PhotoGalleryStoreTests;
+			productReference = FBAC9EFF29FB09D500E9858B /* PhotoGalleryStoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FBAC9F0829FB09D500E9858B /* PhotoGalleryStoreUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBAC9F1929FB09D500E9858B /* Build configuration list for PBXNativeTarget "PhotoGalleryStoreUITests" */;
+			buildPhases = (
+				FBAC9F0529FB09D500E9858B /* Sources */,
+				FBAC9F0629FB09D500E9858B /* Frameworks */,
+				FBAC9F0729FB09D500E9858B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBAC9F0B29FB09D500E9858B /* PBXTargetDependency */,
+			);
+			name = PhotoGalleryStoreUITests;
+			productName = PhotoGalleryStoreUITests;
+			productReference = FBAC9F0929FB09D500E9858B /* PhotoGalleryStoreUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBAC9EE729FB09D300E9858B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					FBAC9EEE29FB09D300E9858B = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					FBAC9EFE29FB09D500E9858B = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FBAC9EEE29FB09D300E9858B;
+					};
+					FBAC9F0829FB09D500E9858B = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FBAC9EEE29FB09D300E9858B;
+					};
+				};
+			};
+			buildConfigurationList = FBAC9EEA29FB09D300E9858B /* Build configuration list for PBXProject "PhotoGalleryStore" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBAC9EE629FB09D300E9858B;
+			packageReferences = (
+				FBAC9F3829FB10A400E9858B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = FBAC9EF029FB09D300E9858B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBAC9EEE29FB09D300E9858B /* PhotoGalleryStore */,
+				FBAC9EFE29FB09D500E9858B /* PhotoGalleryStoreTests */,
+				FBAC9F0829FB09D500E9858B /* PhotoGalleryStoreUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBAC9EED29FB09D300E9858B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBAC9EFA29FB09D500E9858B /* Preview Assets.xcassets in Resources */,
+				FBAC9EF729FB09D500E9858B /* Assets.xcassets in Resources */,
+				FB90B61C2A02C58E0088B81F /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBAC9EFD29FB09D500E9858B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBAC9F0729FB09D500E9858B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBAC9EEB29FB09D300E9858B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBAC9F2829FB0BCD00E9858B /* CartView.swift in Sources */,
+				FBAC9F1D29FB0AA000E9858B /* ContentView.swift in Sources */,
+				FBAC9F2E29FB0C3200E9858B /* Product.swift in Sources */,
+				FBAC9F3029FB0C5200E9858B /* ProductCard.swift in Sources */,
+				FBAC9F1F29FB0AD100E9858B /* CartManager.swift in Sources */,
+				FB90B61E2A0342810088B81F /* CarouselCard.swift in Sources */,
+				FBAC9EF329FB09D300E9858B /* PhotoGalleryStoreApp.swift in Sources */,
+				FBAC9F2129FB0AF900E9858B /* PaymentHandler.swift in Sources */,
+				FBAC9F2629FB0BB300E9858B /* GalleryView.swift in Sources */,
+				FBAC9F3729FB0CAB00E9858B /* PaymentButton.swift in Sources */,
+				FBAC9F3429FB0C8800E9858B /* ProductRow.swift in Sources */,
+				FBAC9F3229FB0C6E00E9858B /* CartButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBAC9EFB29FB09D500E9858B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBAC9F0429FB09D500E9858B /* PhotoGalleryStoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBAC9F0529FB09D500E9858B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBAC9F1029FB09D500E9858B /* PhotoGalleryStoreUITestsLaunchTests.swift in Sources */,
+				FBAC9F0E29FB09D500E9858B /* PhotoGalleryStoreUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBAC9F0129FB09D500E9858B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBAC9EEE29FB09D300E9858B /* PhotoGalleryStore */;
+			targetProxy = FBAC9F0029FB09D500E9858B /* PBXContainerItemProxy */;
+		};
+		FBAC9F0B29FB09D500E9858B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBAC9EEE29FB09D300E9858B /* PhotoGalleryStore */;
+			targetProxy = FBAC9F0A29FB09D500E9858B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FBAC9F1129FB09D500E9858B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBAC9F1229FB09D500E9858B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBAC9F1429FB09D500E9858B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PhotoGalleryStore/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = galleryApp.PhotoGalleryStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBAC9F1529FB09D500E9858B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PhotoGalleryStore/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = galleryApp.PhotoGalleryStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FBAC9F1729FB09D500E9858B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = galleryApp.PhotoGalleryStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoGalleryStore.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PhotoGalleryStore";
+			};
+			name = Debug;
+		};
+		FBAC9F1829FB09D500E9858B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = galleryApp.PhotoGalleryStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoGalleryStore.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PhotoGalleryStore";
+			};
+			name = Release;
+		};
+		FBAC9F1A29FB09D500E9858B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = galleryApp.PhotoGalleryStoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhotoGalleryStore;
+			};
+			name = Debug;
+		};
+		FBAC9F1B29FB09D500E9858B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = galleryApp.PhotoGalleryStoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhotoGalleryStore;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBAC9EEA29FB09D300E9858B /* Build configuration list for PBXProject "PhotoGalleryStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBAC9F1129FB09D500E9858B /* Debug */,
+				FBAC9F1229FB09D500E9858B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBAC9F1329FB09D500E9858B /* Build configuration list for PBXNativeTarget "PhotoGalleryStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBAC9F1429FB09D500E9858B /* Debug */,
+				FBAC9F1529FB09D500E9858B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBAC9F1629FB09D500E9858B /* Build configuration list for PBXNativeTarget "PhotoGalleryStoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBAC9F1729FB09D500E9858B /* Debug */,
+				FBAC9F1829FB09D500E9858B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBAC9F1929FB09D500E9858B /* Build configuration list for PBXNativeTarget "PhotoGalleryStoreUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBAC9F1A29FB09D500E9858B /* Debug */,
+				FBAC9F1B29FB09D500E9858B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FBAC9F3829FB10A400E9858B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FBAC9F3929FB10A400E9858B /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBAC9F3829FB10A400E9858B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		FBAC9F3B29FB10A400E9858B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBAC9F3829FB10A400E9858B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FBAC9EE729FB09D300E9858B /* Project object */;
+}
